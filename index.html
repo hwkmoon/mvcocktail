@@ -1,12 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
-  </head>
-  <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
-  </body>
+    <title>MV Cocktail</title>
+    <link rel="shortcut icon" type="favicon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- navbar -->
+    <div class="navbar">
+        <input type="checkbox" class="checkbox" id="click" hidden>
+
+        <!-- sidebar -->
+        <div class="sidebar">
+            <label for="click">
+                <div class="menu-icon">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </label>
+
+            <ul class="social-icons-list">
+                <li>
+                    <a href="https://www.instagram.com/mvcocktail/?hl=fr" class="social-link"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/M.Vcocktails/" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/mvcocktail" class="social-link"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+
+            <div class="brand">
+                <p>MV</p>
+            </div>
+
+        </div>
+        <!-- end of sidebar -->
+
+        <!-- navigation -->
+        <nav class="navigation">
+            <div class="navigation-header">
+                <img src="assets/img/logo_name.png" class="logo-name" alt="">
+            </div>
+
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a href="#home" class="navigation-link">Accueil</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#about-us" class="navigation-link">A propos</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#contact" class="navigation-link">Contact</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#devis" class="navigation-link">Devis</a>
+                </li>
+            </ul>
+
+
+        </nav>
+        <!-- end of navigation -->
+    </div>
+
+    <!-- end of navbar -->
+    <!-- header  -->
+    <header class="header" id="home">
+        <div class="brand">
+            <img src="/assets/img/logo_transparent.png" class="header-logo" alt="">
+            <h3 class="mv-heading">
+                MV COCKTAIL
+            </h3>
+        </div>
+        <div class="banner">
+            <p class="banner-paragraph">Createur de cocktails pour tous vos evenements.</p>
+            <button class="banner-button"><a href="#devis">Devis Gratuit</a></button>
+        </div>
+    </header>
+    <!-- end of header  -->
+    <!-- about us  -->
+    <section class="about-us" id="about-us">
+        <h1 class="about-us-heading">
+            Nous connaitre
+        </h1>
+        <div class="about-us-inside">
+            <div class="about-us-content">
+                <p class="about-us-paragraph">Depuis 2012, chez MV Cocktail nous creons des cocktails uniques blablablalb............</p>
+            </div>
+            <div class="about-us-images">
+                <img src="assets/img/cocktail1.jpg" class="image image-1">
+                <img src="assets/img/cocktail2.jpg" class="image image-2">
+                <img src="assets/img/cocktail3.jpg" class="image image-3">
+                <img src="assets/img/cocktail4.jpg" class="image image-4">
+            </div>
+        </div>  
+    </section>
+    <!-- end of about us  -->
+
+    <!-- contact  -->
+    <section class="contact" id="contact">
+        <h1 class="contact-heading">
+            Contact
+        </h1>
+        <div class="contact-inside">
+            <div class="contact-info">
+                <div class="contact-logo">
+                    <img src="assets/img/logo_transparent.png" width = "100" alt="">
+                </div>
+                <div class="info">
+                    <h3 class="contact-name">Matthieu Vogt</h3>
+                    <div class="phone">
+                        <a><i class="fas fa-phone"></i></a>
+                        <span>06.79.07.58.97</span>
+                    </div>
+                    <div class="mail">
+                        <a><i class="fas fa-envelope"></i></a>
+                        <span>mv.cocktails95@gmail.com</span>
+                    </div>
+                    <div class="contact-social">
+                        <ul class="contact-social-list">
+                            <li>
+                                <a href="https://www.instagram.com/mvcocktail/?hl=fr" class="contact-social-link instagram"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/M.Vcocktails/" class="contact-social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/mvcocktail" class="contact-social-link twitter"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=bois%20de%20boulogne&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <!-- end of contact  -->
+
+    <!-- devis -->
+    <section class="devis" id="devis">
+        <h1 class="devis-heading">
+            Devis
+        </h1>
+        <div class="formulaire">
+            <div class="devis-info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsa nostrum laborum illum quas. Quia accusantium deserunt ab, expedita consectetur nihil ducimus dolore dignissimos non voluptatem id inventore! Quisquam, itaque!</p>
+            </div>
+            <form class="devis-formulaire">
+                <div>
+                    <input type="text" class="form-input" id="name" placeholder="Nom" required>
+                </div>
+                <div>
+                    <input type="email" class="form-input"  id="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input type="tel" class="form-input"  id="phone" placeholder="Telephone" required>
+                </div>
+                <div>
+                   <textarea class="form-input"  id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                </div>
+                <button class="send-message">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    <!-- end of devis  -->
+
+    <!-- footer  -->
+    <footer class="footer">
+        <h1 class="footer-heading">
+            Suivez-nous
+        </h1>
+        <div class="footer-social">
+            <ul class="footer-social-list">
+                <li>
+                    <a href="https://www.instagram.com/mvcocktail/?hl=fr" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/M.Vcocktails/" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/mvcocktail" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright-text">
+            <p>Copyright &copy; 2021. MV Cocktail. All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- end of footer  -->
+</body>
 </html>
